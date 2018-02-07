@@ -1,14 +1,14 @@
 <TabView [(ngModel)]="selectedIndex" class="tab-view">
-  <StackLayout *tabItem="{iconSource: 'res://ic_photo_camera'}">
+  <!-- <StackLayout *tabItem="{iconSource: 'res://ic_photo_camera'}">
     <Label text="Tab Camera" textWrap="true"></Label>
-  </StackLayout>
-  <StackLayout *tabItem="{title: 'Chats'}">
+  </StackLayout> -->
+  <StackLayout *tabItem="{title: 'Notícias'}">
     <ns-chats></ns-chats>
   </StackLayout>
-  <StackLayout *tabItem="{title: 'Status'}">
+  <StackLayout *tabItem="{title: 'Salvos'}">
     <Label text="Tab Status" textWrap="true"></Label>
   </StackLayout>
-  <StackLayout *tabItem="{title: 'Calls'}">
+  <!-- <StackLayout *tabItem="{title: 'Calls'}">
     <Label text="Tab Calls" textWrap="true"></Label>
-  </StackLayout>
+  </StackLayout> -->
 </TabView>

@@ -1,9 +1,9 @@
 <ActionBar class="action-bar link">
-    <Label text="NativesApp" class="action-bar-title"
+    <Label text="Notícias UNASP-HT" class="action-bar-title"
       [class.h1]="platform.isIOS"
-      android:horizontalAlignment="left"
+      android:horizontalAlignment="center"
       ios:horizontalAlignment="center"></Label>
-    <ng-container *ngIf="platform.isAndroid">
+    <!-- <ng-container *ngIf="platform.isAndroid">
       <ActionItem android.systemIcon="ic_menu_search_mtrl_alpha">
       </ActionItem>
       <ActionItem
@@ -32,7 +32,7 @@
       </ActionItem>
       <ActionItem ios.position="right" ios.systemIcon="7">
       </ActionItem>
-    </ng-container>
+    </ng-container> -->
   </ActionBar>
 
   <ns-tabs></ns-tabs>

@@ -16,14 +16,14 @@ export class TabsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.selectedIndex = this.platform.isAndroid ? 1 : 3;
+    this.selectedIndex = this.platform.isAndroid ? 0 : 1;
 
     if (this.platform.isAndroid) {
       application.android.on(
         application.AndroidApplication.activityBackPressedEvent,
         (args: AndroidActivityBackPressedEventData) => {
-          if (this.selectedIndex !== 1) {
-            this.selectedIndex = 1;
+          if (this.selectedIndex !== 0) {
+            this.selectedIndex = 0;
             args.cancel = true;
             this.changeDetectorRef.detectChanges();
           }
